@@ -19,7 +19,7 @@ const App = () => {
     useEffect(()=>{
                 let clearSetInterval = setInterval(updateTime,1000);
                 return () => clearInterval(clearSetInterval);
-            });
+            },[]);
     return (
         <div className="Clock">
             <h3 id="time">
